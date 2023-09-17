@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sample Navbar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hero">
+    <nav>
+        <!-- <img class="logo" src="images/user.png" alt="logo"> -->
+        <h1>Codedamn</h1>
+        <ul class="icon-container">
+            
+            <li><button><img  class="notification" src="images/notification.png" alt="notification"></button></li>
+            <li><span class="text">2</span></li>
+            <li><button><img src="images/thunder.png" alt="thunder"  class="thunder"></button></li>
+            <div class="search-container">
+                <div class="input-container">
+                    <input type="text" class="search-input" placeholder="Search...">
+    
+                </div>
+                <select class="category-dropdown">
+                    <option value="category1">Course</option>
+                    <option value="category2">Category 2</option>
+                    <option value="category3">Category 3</option>
+                    <!-- Add more category options as needed -->
+                </select>
+            </div>
+        </ul>
+            <!-- <li><a href="#">Features</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li> -->
+        
+        <img class="user-pic" src="images/user.png" alt="user-pic" onclick="toggleMenu()">
+    <div class="sub-menu-wrap" id="subMenu">
+
+        <div class="sub-menu" >
+            <div class="uer-info">
+                <img src="images/user.png" alt="">
+            </div>
+            <hr>
+            <a href="#" class="sub-menu-link">
+                <img src="images/profile.png" alt="picture">
+                <p></p>
+                <span>></span>
+            </a>
+            <a href="#" class="sub-menu-link">
+                <img src="images/setting.png" alt="picture">
+                <p>Settings and Privacy</p>
+                <span>></span>
+            </a>            <a href="#" class="sub-menu-link">
+                <img src="images/help.png" alt="picture">
+                <p>Help & upport</p>
+                <span>></span>
+            </a>
+            <a href="#" class="sub-menu-link">
+                <img src="images/logout.png" alt="picture">
+                <p>logout</p>
+                <span>></span>
+            </a>
+        </div>
+    
+    </div>    
+    </nav>
+    <div class="subbar">
+        <ul class="features">
+            <img class="chrome-img" src="images/chrome.png" alt="features">
+            <li>Features</li>
+        </ul>
+        <ul class="features">
+            <img class="chrome-img" src="images/chrome.png" alt="features">
+            <li>Socials</li>
+        </ul>
+        <ul class="features">
+            <img class="chrome-img" src="images/chrome.png" alt="features">
+            <li>Portfolio</li>
+        </ul>
+        <ul class="features">
+            <img class="chrome-img" src="images/chrome.png" alt="features">
+            <li>Resume</li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="search-bar">
+            <div id="select">
+                <p>All categories</p>
+                <img src="images/course_arrow.png" alt="down arrow">
+                <ul id="list">
+                    <li class="options">All categories</li>
+                    <li class="options">Courses</li>
+                    <li class="options">Certifications</li>
+                    <li class="options">Jobs</li>
+                </ul>
+            </div>
+           <input type="text" placeholder="Search"> 
+    </div>
+    </div>
+    <!-- <div class="sidebar">
+        <div class="sidebar-container">
+            <ul class="pspr">
+                <li class="list-item">
+                   <a href=""> <img class="sidebar-content" src="images/chrome.png" alt=""></a>
+                </li>
+                <li class="list-item">
+                    <img class="sidebar-content" src="images/chrome.png" alt="">
+                </li>
+                <li class="list-item">
+                    <img class="sidebar-content" src="images/chrome.png" alt="">
+                </li>
+                <li class="list-item">
+                    <img class="sidebar-content" src="images/chrome.png" alt="">
+                </li>
+            </ul>
+
+        </div>
+    </div> -->
+    
+    
+    <script>
+       let  subMenu = document.getElementById("subMenu");
+       function toggleMenu(){
+           subMenu.classList.toggle("open-menu");
+       }
+       let select=document.getElementById("select");
+       let list=document.getElementById("list");
+
+       select.onclick=function(){
+        list.classList.toggle("open");
+           
+       }
+    </script>
+</body>
+</html>
