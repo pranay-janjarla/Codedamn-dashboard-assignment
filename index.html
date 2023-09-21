@@ -3,6 +3,9 @@
 <head>
     <title>Sample Navbar</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mooli&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="hero">
@@ -16,6 +19,7 @@
             <li><button><img src="images/thunder.png" alt="thunder"  class="thunder"></button></li>
             <div class="search-container">
                 <div class="input-container">
+                    <img class="search-image" src="images/search.png" alt="">
                     <input type="text" class="search-input" placeholder="Search...">
     
                 </div>
@@ -60,41 +64,79 @@
             </a>
         </div>
     
-    </div>    
+    </div>      
     </nav>
-    <div class="subbar">
-        <ul class="features">
-            <img class="chrome-img" src="images/chrome.png" alt="features">
-            <li>Features</li>
-        </ul>
-        <ul class="features">
-            <img class="chrome-img" src="images/chrome.png" alt="features">
-            <li>Socials</li>
-        </ul>
-        <ul class="features">
-            <img class="chrome-img" src="images/chrome.png" alt="features">
-            <li>Portfolio</li>
-        </ul>
-        <ul class="features">
-            <img class="chrome-img" src="images/chrome.png" alt="features">
-            <li>Resume</li>
-        </ul>
+    <div class="page-1-block-1">
+        <div class="page-1-block-1-container-1">
+            
+            <form>
+                
+                <div class="upload-container">
+                    <img class="upload-image" src="images/user.png" alt="">
+                <div for="file-upload" class="custom-file-upload">
+                    <p>Upload image</p>
+                    <input type="file" id="file-upload" name="file" accept=".pdf, .jpg, .jpeg, .png" required>
+                </div>
+                <div for="file-delete" class="custom-file-delete">
+                    <p>Delete</p>
+                    <input type="file" id="file-upload" name="file" accept=".pdf, .jpg, .jpeg, .png" required>
+                </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="name">Name:</label>
+                    <input class="name-input" type="text" id="form-name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="email">Email:</label>
+                    <input class="email-input" type="email" id="form-email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="gender">Gender:</label>
+                    <select class="gender-select" id="form-gender" name="gender" required>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="profession">Profession:</label>
+                    <select class="profession-select" id="form-profession" name="profession" required>
+                        <option value="software-developer">Software Developer</option>
+                        <option value="web-designer">Web Designer</option>
+                        <option value="data-scientist">Data Scientist</option>
+                        <option value="project-manager">Project Manager</option>
+                        <!-- Add more profession options as needed -->
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="dob">Date of Birth:</label>
+                    <input class="dob-input" type="date" id="form-dob" name="dob" required>
+                </div>
+                <h2>Visibility controls</h2>
+                <button type="submit">Submit</button>
+            </form>
+
+        </div>
+        <div class="page-1-block-1-container-2">
+            <ul class="features">
+                <img class="chrome-img" src="images/chrome.png" alt="features">
+                <li>Features</li>
+            </ul>
+            <ul class="features">
+                <img class="chrome-img" src="images/chrome.png" alt="features">
+                <li>Socials</li>
+            </ul>
+            <ul class="features">
+                <img class="chrome-img" src="images/chrome.png" alt="features">
+                <li>Portfolio</li>
+            </ul>
+            <ul class="features">
+                <img class="chrome-img" src="images/chrome.png" alt="features">
+                <li>Resume</li>
+            </ul> 
+        </div> 
     </div>
-    <div class="container">
-        <div class="search-bar">
-            <div id="select">
-                <p>All categories</p>
-                <img src="images/course_arrow.png" alt="down arrow">
-                <ul id="list">
-                    <li class="options">All categories</li>
-                    <li class="options">Courses</li>
-                    <li class="options">Certifications</li>
-                    <li class="options">Jobs</li>
-                </ul>
-            </div>
-           <input type="text" placeholder="Search"> 
-    </div>
-    </div>
+
     <!-- <div class="sidebar">
         <div class="sidebar-container">
             <ul class="pspr">
@@ -113,6 +155,7 @@
             </ul>
 
         </div>
+        
     </div> -->
     
     
