@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sample Navbar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mooli&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="hero">
+    <nav>
+        <!-- <img class="logo" src="images/user.png" alt="logo"> -->
+        <h1>Codedamn</h1>
+        <ul class="icon-container">
+            
+            <li><button><img  class="notification" src="images/notification.png" alt="notification"></button></li>
+            <li><span class="text">2</span></li>
+            <li><button><img src="images/thunder.png" alt="thunder"  class="thunder"></button></li>
+            <div class="search-container">
+                <div class="input-container">
+                    <img class="search-image" src="images/search.png" alt="">
+                    <input type="text" class="search-input" placeholder="Search...">
+    
+                </div>
+                <select class="category-dropdown">
+                    <option value="category1">Course</option>
+                    <option value="category2">Category 2</option>
+                    <option value="category3">Category 3</option>
+                    <!-- Add more category options as needed -->
+                </select>
+            </div>
+        </ul>
+            <!-- <li><a href="#">Features</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li> -->
+        
+        <img class="user-pic" src="images/user.png" alt="user-pic" onclick="toggleMenu()">
+    <div class="sub-menu-wrap" id="subMenu">
+
+        <div class="sub-menu" >
+            <div class="uer-info">
+                <img src="images/user.png" alt="">
+            </div>
+            <hr>
+            <a href="#" class="sub-menu-link">
+                <img src="images/profile.png" alt="picture">
+                <p></p>
+                <span>></span>
+            </a>
+            <a href="#" class="sub-menu-link">
+                <img src="images/setting.png" alt="picture">
+                <p>Settings and Privacy</p>
+                <span>></span>
+            </a>            <a href="#" class="sub-menu-link">
+                <img src="images/help.png" alt="picture">
+                <p>Help & upport</p>
+                <span>></span>
+            </a>
+            <a href="#" class="sub-menu-link">
+                <img src="images/logout.png" alt="picture">
+                <p>logout</p>
+                <span>></span>
+            </a>
+        </div>
+    
+    </div>      
+    </nav>
+    <div class="page-1-block-1">
+        <div class="page-1-block-1-container-1">
+            
+            <form>
+                
+                <div class="upload-container">
+                    <img class="upload-image" src="images/user.png" alt="">
+                <div for="file-upload" class="custom-file-upload">
+                    <p>Upload image</p>
+                    <input type="file" id="file-upload" name="file" accept=".pdf, .jpg, .jpeg, .png" required>
+                </div>
+                <div for="file-delete" class="custom-file-delete">
+                    <p>Delete</p>
+                    <input type="file" id="file-upload" name="file" accept=".pdf, .jpg, .jpeg, .png" required>
+                </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="name">Name:</label>
+                    <input class="name-input" type="text" id="form-name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="email">Email:</label>
+                    <input class="email-input" type="email" id="form-email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="gender">Gender:</label>
+                    <select class="gender-select" id="form-gender" name="gender" required>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="profession">Profession:</label>
+                    <select class="profession-select" id="form-profession" name="profession" required>
+                        <option value="software-developer">Software Developer</option>
+                        <option value="web-designer">Web Designer</option>
+                        <option value="data-scientist">Data Scientist</option>
+                        <option value="project-manager">Project Manager</option>
+                        <!-- Add more profession options as needed -->
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="dob">Date of Birth:</label>
+                    <input class="dob-input" type="date" id="form-dob" name="dob" required>
+                </div>
+                <h2>Visibility controls</h2>
+                    <p>Here are some of the visibility controls</p>
+                <div class="visibility-container">
+                    
+                    
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+
+        </div>
+        <div class="page-1-block-1-container-2">
+            <ul class="features">
+                <img class="chrome-img" src="images/chrome.png" alt="features">
+                <li>Features</li>
+            </ul>
+            <ul class="features">
+                <img class="chrome-img" src="images/chrome.png" alt="features">
+                <li>Socials</li>
+            </ul>
+            <ul class="features">
+                <img class="chrome-img" src="images/chrome.png" alt="features">
+                <li>Portfolio</li>
+            </ul>
+            <ul class="features">
+                <img class="chrome-img" src="images/chrome.png" alt="features">
+                <li>Resume</li>
+            </ul> 
+        </div> 
+    </div>
+
+    <!-- <div class="sidebar">
+        <div class="sidebar-container">
+            <ul class="pspr">
+                <li class="list-item">
+                   <a href=""> <img class="sidebar-content" src="images/chrome.png" alt=""></a>
+                </li>
+                <li class="list-item">
+                    <img class="sidebar-content" src="images/chrome.png" alt="">
+                </li>
+                <li class="list-item">
+                    <img class="sidebar-content" src="images/chrome.png" alt="">
+                </li>
+                <li class="list-item">
+                    <img class="sidebar-content" src="images/chrome.png" alt="">
+                </li>
+            </ul>
+
+        </div>
+        
+    </div> -->
+    
+    
+    <script>
+       let  subMenu = document.getElementById("subMenu");
+       function toggleMenu(){
+           subMenu.classList.toggle("open-menu");
+       }
+       let select=document.getElementById("select");
+       let list=document.getElementById("list");
+
+       select.onclick=function(){
+        list.classList.toggle("open");
+           
+       }
+    </script>
+</body>
+</html>
