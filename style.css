@@ -220,6 +220,12 @@ button {
     padding: 20px 15px;
     transition: all 0.5s ease;
     border-radius: 8%;
+
+}
+.subLinks{
+    text-decoration: none;
+    color: #181818;
+
 }
 .features{
     display: flex;
@@ -231,6 +237,7 @@ button {
     margin-bottom: 20px;
     margin-left: 10px;
     list-style:none;
+    
 }
 
 .chrome-img{
@@ -476,7 +483,7 @@ button[type="submit"]:hover {
     background-color: #0056b3;
 }
 
-.page-1-block-1{
+.page_1_block_1{
     margin-top: 150px;
     display: flex;
     height: 100%;
@@ -485,12 +492,18 @@ button[type="submit"]:hover {
     justify-content: center;
 }
 
-.page-1-block-1-container-1{
+.page_1_block_1_container_1{
     display: flex;
+    height: 600px;
+    width: 100%;
     flex-direction: row-reverse;
     justify-content: space-evenly;
     margin-right:100px;
- 
+    visibility: hidden;
+}
+
+.page_1_block_1_container_1.open_profile{
+    visibility: visible;
 }
 .page-1-block-1-container-2{
     height: 300px;
@@ -513,7 +526,11 @@ button[type="submit"]:hover {
     flex-direction: column;
     margin-right: 0px;
     margin-left: -2px;
-    margin-top: 0px;
-    margin-bottom: 20px;
+    margin-top: 90px;
 }
 
+.form_aged{
+    display: flex;
+    flex-direction: column;
+    visibility: hidden;
+}
